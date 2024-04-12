@@ -11,7 +11,7 @@ The weather station collects weather data using an Arduino Uno and sensors. It c
 - DHT11 Temperature and Humidity Sensor
 - FS1000A 433MHz RF Transmitter
 
-The weather station is powered by a cable from a computer. The collected data is transmitted wirelessly to the integrating module.
+The weather station is powered by a cable from a computer. I encourage you to change the power source that will allow this station to be portable. I simply wanted to focus on other parts of this project and had very limited budget. The collected data is radio transmitted wirelessly to the integrating module.
 
 ### Integrating Module
 The integrating module receives data from the weather station and sends it to a server via REST API. It comprises:
