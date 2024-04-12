@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/main.css" media="screen, projection">
+    <meta http-equiv="refresh" content="10">
+    <style>
+        /* Additional CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">WEATHER STATION DATABASE</div>
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Temperature</th>
+                    <th>Humidity</th>
+                    <th>Device ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for mes in measurements %}
+                <tr>
+                    <td>{{ mes.created_at|datetimefmt }}</td>
+                    <td>{{ mes.temperature }}°C</td>
+                    <td>{{ mes.humidity }}%</td>
+                    <td>{{ mes.device_id }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
