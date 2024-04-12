@@ -29,7 +29,7 @@ The integrating module is powered by a battery, and its output is boosted by the
 A PCB was designed to provide stability to the wiring connections. However, there was a challenge during its creation as it was ordered one-sided, causing difficulty in soldering the components.
 
 ### 3D Printed Container
-A small container was 3D printed to house the integrating module. While a proper case was not developed, the dimensions of the container and lid are provided for reference.
+A small container was 3D printed to house the integrating module. The container's dimensions are 100x65x50 [mm] and lid's are 107x72x8 [mm]. I used Siemens NX for this so i don't know if you will be able to make changes but stl files will be fine to print right away. I haven't made proper case as i wanted to focus on programming side but i encorage tou to do so if you have spare time!
 ![2023_12_19 18_25 Office Lens](https://github.com/nervles/Weather-Station-IoT-Smart-RESTAPI/assets/130153131/f8efacde-7a2d-423d-845a-f3d6d8cb7a48)
 
 ### Assembled integrating module
@@ -68,4 +68,4 @@ A small container was 3D printed to house the integrating module. While a proper
 - The integrating module sends the data to the server using REST API routes.
 - Users can access the visualized data on the website hosted on the server.
 
-Feel free to explore the code and contribute to further improvements!
+Feel free to explore the code and make your own improvements!
