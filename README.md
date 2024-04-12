@@ -12,12 +12,6 @@ The weather station collects weather data using an Arduino Uno and sensors. It c
 - FS1000A 433MHz RF Transmitter
 ![stacja_bb](https://github.com/nervles/Weather-Station-IoT-Smart-RESTAPI/assets/130153131/11db2c48-978f-4326-8dc2-ddb22589e30e)
 
-![2023_12_19 18_25 Office Lens](https://github.com/nervles/Weather-Station-IoT-Smart-RESTAPI/assets/130153131/f8efacde-7a2d-423d-845a-f3d6d8cb7a48)
-
-![2023_12_19 19_58 Office Lens (1)](https://github.com/nervles/Weather-Station-IoT-Smart-RESTAPI/assets/130153131/1b7542c4-69b7-40cb-a59d-efc38acc7a04)
-
-![2023_12_19 19_58 Office Lens (2)](https://github.com/nervles/Weather-Station-IoT-Smart-RESTAPI/assets/130153131/3f9744e3-d6c8-4a82-82c3-36c0c08019c5)
-
 The weather station is powered by a cable from a computer. I encourage you to change the power source that will allow this station to be portable. I simply wanted to focus on other parts of this project and had very limited budget. The collected data is radio transmitted wirelessly to the integrating module.
 
 ### Integrating Module
@@ -36,6 +30,12 @@ A PCB was designed to provide stability to the wiring connections. However, ther
 
 ### 3D Printed Container
 A small container was 3D printed to house the integrating module. While a proper case was not developed, the dimensions of the container and lid are provided for reference.
+![2023_12_19 18_25 Office Lens](https://github.com/nervles/Weather-Station-IoT-Smart-RESTAPI/assets/130153131/f8efacde-7a2d-423d-845a-f3d6d8cb7a48)
+
+### Assembled integrating module
+![2023_12_19 19_58 Office Lens (1)](https://github.com/nervles/Weather-Station-IoT-Smart-RESTAPI/assets/130153131/1b7542c4-69b7-40cb-a59d-efc38acc7a04)
+
+![2023_12_19 19_58 Office Lens (2)](https://github.com/nervles/Weather-Station-IoT-Smart-RESTAPI/assets/130153131/3f9744e3-d6c8-4a82-82c3-36c0c08019c5)
 
 ## Repository Contents
 
@@ -44,7 +44,7 @@ A small container was 3D printed to house the integrating module. While a proper
 - Wiring diagram for the integrating module (Eagle)
 - PCB diagram for the integrating module (Eagle)
 - Photos of the assembled weather station and integrating module
-- 3D model files and photos of the printed container
+- 3D model photos of the printed container
 
 ### Code
 - Code for the weather station (Arduino)
