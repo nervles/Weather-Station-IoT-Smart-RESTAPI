@@ -27,7 +27,7 @@ The integrating module receives data from the weather station and sends it to a 
 The integrating module is powered by a battery, and its output is boosted by the charging module to 5V to power the ESP32 and receiver.
 
 ### How does it work? - brief description
-The weather station radio transmits the data to integrating module. Integrating module receives the data, processes it to json and sends it to the server. The data is displayed on website in real time. Server is hosted on [pythonanywhere.com](pythonanywhere.com). It allows its services for free - you just have to sign in. Then you have to set it up and upload the database. (I won't delve deeper into that, because there are surely some tutorials on how to do it)
+The weather station radio transmits the data to integrating module. Integrating module receives the data, processes it to json and sends it to the server. RESTAPI flask app allows to store the data that is send by module on server and display it on website. The data is displayed on website in real time. Server is hosted on [pythonanywhere.com](pythonanywhere.com). It allows its services for free - you just have to sign in. Then you have to set it up and upload the database. (I won't delve deeper into that, because there are surely some tutorials on how to do it).
 
 <img src="https://github.com/nervles/Weather-Station-IoT-Smart-RESTAPI/assets/130153131/a8da6115-4cc9-4c3c-a8c8-6bb0f1128410" width=500 height=150>
 
@@ -49,6 +49,10 @@ A small container was 3D printed to house the integrating module. The container'
 <img src="https://github.com/nervles/Weather-Station-IoT-Smart-RESTAPI/assets/130153131/1b7542c4-69b7-40cb-a59d-efc38acc7a04" width=400 height=500>
 
 <img src="https://github.com/nervles/Weather-Station-IoT-Smart-RESTAPI/assets/130153131/3f9744e3-d6c8-4a82-82c3-36c0c08019c5" width=400 height=500>
+
+### Assembled weather station
+
+<img src="https://github.com/nervles/Weather-Station-IoT-Smart-RESTAPI/assets/130153131/b40e35ef-ef54-4328-8084-1a0376b8a2d7" width=400 height=500>
 
 ## Repository Contents
 
