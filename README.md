@@ -27,7 +27,7 @@ The integrating module receives data from the weather station and sends it to a 
 The integrating module is powered by a battery, and its output is boosted by the charging module to 5V to power the ESP32 and receiver.
 
 ### How does it work? - brief description
-The weather station radio transmits the data to integrating module. Integrating module receives the data, processes it to json and sends it to the server. The data is displayed on website in real time.
+The weather station radio transmits the data to integrating module. Integrating module receives the data, processes it to json and sends it to the server. The data is displayed on website in real time. Server is hosted on [pythonanywhere.com](pythonanywhere.com). It allows its services for free - you just have to sign in. Then you have to set it up and upload the database. (I won't delve deeper into that, because there are surely some tutorials on how to do it)
 
 ![image](https://github.com/nervles/Weather-Station-IoT-Smart-RESTAPI/assets/130153131/a8da6115-4cc9-4c3c-a8c8-6bb0f1128410)
 
@@ -36,6 +36,10 @@ The weather station radio transmits the data to integrating module. Integrating 
 A PCB was designed to provide stability to the wiring connections. However, there was a challenge during its creation as it was ordered one-sided, causing difficulty in soldering the components.
 
 ![pcb_sciezki](https://github.com/nervles/Weather-Station-IoT-Smart-RESTAPI/assets/130153131/9cdbfa2f-6886-48a7-847d-6285f3ceb2c3)
+
+![2024_04_12 21_14 Office Lens](https://github.com/nervles/Weather-Station-IoT-Smart-RESTAPI/assets/130153131/56095a07-3a78-49b8-93af-15633b7b8cc3)
+
+<span style="color:red; font-size: medium;">ESP should be mirrored in eagle. Because my mistake make assembly/soldering problematic. ESP should be on the same side as rest of the components but it is not</span>
 
 ### 3D Printed Container
 A small container was 3D printed to house the integrating module. The container's dimensions are 100x65x50 [mm] and lid's are 107x72x8 [mm]. I used Siemens NX for this so i don't know if you will be able to make changes but stl files will be fine to print right away. I haven't made proper case as i wanted to focus on programming side but i encorage tou to do so if you have spare time!
@@ -55,21 +59,21 @@ A small container was 3D printed to house the integrating module. The container'
 - Wiring diagram for the integrating module (Eagle)
 - PCB diagram for the integrating module (Eagle)
 - Photos of the assembled weather station and integrating module
-- 3D model photos of the printed container
+- 3D model photo of the printed container
 
 ### Code
-- Code for the weather station (Arduino)
-- Code for the integrating module (Arduino with ESP32)
+- Code for the weather station (Arduino/C)
+- Code for the integrating module (Arduino/C)
 - Flask application for server-side implementation (Python)
 - Database creation code (SQL)
-- Website code for visualizing data (HTML/CSS)
+- Website code for visualizing data (HTML)
 
 ## Setup Instructions
 
 1. Connect the components according to the provided wiring diagrams.
 2. Upload the Arduino code to the weather station and integrating module.
 3. Set up the Flask application on a server (e.g., PythonAnywhere).
-4. Create the database using the provided SQL code.
+4. Create the database using the provided SQL code and deploy it on server.
 5. Deploy the website code to visualize the data.
 
 ![baza](https://github.com/nervles/Weather-Station-IoT-Smart-RESTAPI/assets/130153131/38502eed-e096-4185-9974-f735f3190816)
